@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <title>Document</title>
+    <style>
+        /* html,
+        body {
+            position: relative;
+            height: 100%;
+        } */
+
+
+
+        /* .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        } */
+
+        .app_product_paginator_top {
+            height: 280px;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 770px) {
+            .app_product_paginator_top {
+                height: 500px;
+                width: 100%;
+
+            }
+        }
+
+
+
+        /* .gallery-top {
+            height: 280px;
+            width: 100%;
+
+        }
+
+        @media only screen and (max-width: 770px) {
+            .gallery-top {
+                height: 500px;
+                width: 100%;
+
+            }
+        } */
+
+        .gallery-thumbs .swiper-slide {
+            opacity: 0.7;
+        }
+
+        .swiper-slide-thumb-active {
+            transition: all 0.1s;
+        }
+
+        .gallery-thumbs .swiper-slide-thumb-active {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        /* my */
+        .app_product_paginator_slide_vrtcl_swiper-slide {
+            height: 20%;
+        }
+
+        .app_product_paginator_vrtcl {
+            padding: 40px 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="app_product_paginator_vrtcl app_white_container row">
+            <div class=" col-md-3 p-0 app_product_paginator_slide_vrtcl_gallery-thumbs gallery-thumbs">
+                <h3 class="text-danger text-right mb-5 pt-0">محصولات</h3>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide app_product_paginator_slide_vrtcl_swiper-slide text-right  pr-3 ">
+                        <p class="font-weight-bold">ساعت مچی مدل 251c</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 text-right swiper-container gallery-top w-100">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <div class="row">
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <img src="./src/img/1_rotate.png"
+                                    class="app_product_paginator_slide_img d-flex justify-content-center" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="app_product_paginator_slide_content align-middle text-center">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، 
+                                </p>
+                                <div class="app_product_paginator_slide_variations d-flex justify-content-center">
+                                    <div
+                                        class="app_product_paginator_slide_color d-flex bg-light app_raidus_20 py-2 px-3 align-items-center ">
+                                        <div class="bg-danger rounded-circle ms-2" style="height: 10px; width: 10px;">
+                                        </div>
+                                        <p class="m-0">صورتی</p>
+                                    </div>
+                                    <div
+                                        class="app_product_paginator_slide_color d-flex bg-light app_raidus_20 py-2 px-3 align-items-center mx-1">
+                                        <div class="bg-danger rounded-circle ms-2" style="height: 10px; width: 10px;">
+                                        </div>
+                                        <p class="m-0">صورتی</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mt-2 d-flex justify-content-center">
+                                    <button type="button" class="btn app_button_cyan app_button my-3">افزودن به سبد
+                                        خرید</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 19,
+            direction: 'vertical',
+            slidesPerView: 6,
+
+            loop: true,
+            freeMode: true,
+            loopedSlides: 5, //looped slides should be the same
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+            loop: true,
+            loopedSlides: 5, //looped slides should be the same
+            direction: 'vertical',
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: galleryThumbs,
+            },
+        });
+    </script>
+</body>
+
+</html>

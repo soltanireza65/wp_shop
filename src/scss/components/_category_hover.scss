@@ -1,0 +1,47 @@
+.catgory_hover_show_img_container{
+    height: 330px;
+}
+
+.catgory_hover_show_img-1{
+    
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    img{
+        height: 250px;
+        width: auto;
+    }
+    &:hover{
+        z-index: 2;
+    }
+}
+
+.catgory_hover_show_img-2{
+    
+    position: absolute;
+    left: 200px;
+    top: 35px;
+    z-index: 1;
+    img{
+        height: 250px;
+        width: auto;
+    }
+    &:hover{
+        z-index: 2;
+    }
+}
+.catgory_hover_show_img-3{
+    
+    position: absolute;
+    left: 400px;
+    top: 35px;
+    z-index: 1;
+    img{
+        height: 250px;
+        width: auto;
+    }
+
+    &:hover{
+        z-index: 2;
+    }
+}

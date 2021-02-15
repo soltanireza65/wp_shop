@@ -1,0 +1,29 @@
+$bg_color :  #DEE0E6;
+.bg_color{
+    background-color: $bg_color;
+}
+$color_orange : #FFA822;
+.color_orange{
+    color: $color_orange;
+}
+$color_gray_light : #F5F5F5;
+.color_gray_light{
+    color: $color_gray_light;
+}
+.bg_gray_light{
+    background-color: $color_gray_light;
+}
+$color_gray : #717171;
+$color_dark_gray : #222222;
+$color_cyan: #1AC0C6;
+.bg_cyan{
+    background-color: $color_cyan;
+}
+
+$color_cyan_dark: #149ba0;
+$color_red : #DC3545;
+.color_red{
+    color: $color_red;
+}
+
+

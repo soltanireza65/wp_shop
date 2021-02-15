@@ -1,0 +1,13 @@
+.app_button{
+border-radius: 20px;
+padding: 8px 20px;
+}
+
+.app_button_cyan{
+    background-color: $color_cyan ;
+    color: white;
+    &:hover{
+        background-color: $color_cyan_dark;
+        color: white;
+    }
+}
