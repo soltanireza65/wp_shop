@@ -3,9 +3,10 @@
 }
 
 .app-card-banner-1-bottom{
-    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
-    clip-path: inset(10px round 80px 20px 30px 10px);
+    clip-path: polygon(0 30% , 100% 0, 100% 100%, 0 100%);
+    // clip-path: inset(30px round 80px 20px 30px 10px);
 
-    // margin-top: -120px;
+    margin-top: -120px;
     height: 150px;
+    border-radius: 0 0 20px 20px;
 }

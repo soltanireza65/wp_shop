@@ -1,0 +1,28 @@
+.app_product_paginator {
+  background-color: white;
+  border: none;
+}
+.app_product_paginator_tabs {
+  
+  .app_product_paginator_tabs_btn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: dark;
+    align-items: right;
+  }
+}
+
+.nav-pills .nav-link.active {
+  color: $color_orange;
+  background-color: transparent;
+}
+
+.app_product_paginator_images {
+  img {
+    max-height: 250px;
+    width: 100%;
+    object-fit: contain;
+    // padding: 20px;
+  }
+}

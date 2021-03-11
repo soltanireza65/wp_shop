@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+    <title>vertival_tab_bts</title>
+  </head>
+
+  <body class="bg-light">
+    <div class="container">
+        <div class="d-flex align-items-start app_product_paginator">
+            <div class="nav flex-column nav-pills me-3 app_product_paginator_tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pills-home-tab app_product_paginator_tabs_btn" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">هندزفری</button>
+              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</buttona>
+              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div class="row ml-auto">
+                    <div class="col-md-6 d-flex justify-content-center app_product_paginator_images">
+                      <img src="./src/img/1_rotate.png" class="ax" alt="" />
+                    </div>
+                    <div class="col-md-6">
+                      <p
+                        class="app_product_paginator_slide_content align-middle text-center"
+                      >
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                      </p>
+                      <div
+                        class="app_product_paginator_slide_variations d-flex justify-content-center"
+                      >
+                        <div
+                          class="app_product_paginator_slide_color d-flex bg-light app_raidus_20 py-2 px-3 align-items-center"
+                        >
+                          <div
+                            class="bg-danger rounded-circle ms-2"
+                            style="height: 10px; width: 10px"
+                          ></div>
+                          <p class="m-0">صورتی</p>
+                        </div>
+                        <div
+                          class="app_product_paginator_slide_color d-flex bg-light app_raidus_20 py-2 px-3 align-items-center mx-1"
+                        >
+                          <div
+                            class="bg-danger rounded-circle ms-2"
+                            style="height: 10px; width: 10px"
+                          ></div>
+                          <p class="m-0">صورتی</p>
+                        </div>
+                      </div>
+
+                      <div class="d-flex mt-2 d-flex justify-content-center">
+                        <button
+                          type="button"
+                          class="btn app_button_cyan app_button my-3"
+                        >
+                          افزودن به سبد خرید
+                        </button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+            </div>
+          </div>
+    </div>
+
+    <!-- btstrp -->
+    <script src="src/js/jquery.slim.min.js"></script>
+    <script src="src/js/bootstrap.bundle.min.js"></script>
+
+    <!-- swpr -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
